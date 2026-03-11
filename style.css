@@ -4,20 +4,9 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: Arial, sans-serif;
-  color: #222;
-  background: #fff;
-  line-height: 1.5;
-}
-
-img {
-  display: block;
-  max-width: 100%;
+  background: #ffffff;
 }
 
 a {
@@ -28,51 +17,15 @@ a {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.section-mini {
-  text-align: center;
-  color: #57a6d4;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.white-text-top {
-  text-align: center;
-  color: #8fd3ff;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 48px;
-  line-height: 1.15;
-  margin-bottom: 16px;
-  color: #0c324b;
-}
-
-.white-title {
-  color: #fff;
-  text-align: center;
-}
-
-.section-text {
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto 50px;
-  color: #666;
-  font-size: 16px;
-}
-
-.white-text {
-  color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-}
-
-
-.bg-image {
+.hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -80,125 +33,166 @@ h2 {
   object-fit: cover;
 }
 
-
-.hero {
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(18, 34, 46, 0.45);
-  z-index: 1;
+  background: rgba(16, 36, 50, 0.38);
 }
-
 .header {
   position: relative;
-  z-index: 3;
-  padding: 28px 0;
+  z-index: 5;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.nav {
+.header-row {
+  min-height: 72px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
 .logo {
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
-  color: #0b2f47;
+  color: #0d3550;
 }
 
-.menu {
+.nav {
   display: flex;
-  gap: 34px;
+  align-items: center;
+  gap: 28px;
 }
 
-.menu a {
-  color: #0b2f47;
-  font-size: 15px;
-  font-weight: 500;
+.nav a {
+  font-size: 13px;
+  color: #3f5e72;
+  transition: 0.2s;
 }
 
-.header-contact {
-  color: #0b2f47;
-  font-size: 15px;
+.nav a:hover {
+  color: #0d3550;
+}
+
+.phone-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.2;
+}
+
+.phone-label {
+  font-size: 10px;
+  color: #7d8d99;
+  margin-bottom: 2px;
+}
+
+.phone-number {
+  font-size: 14px;
   font-weight: 700;
+  color: #0d3550;
 }
-
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: white;
-  max-width: 930px;
-  margin: 0 auto;
-  padding-top: 170px;
+  min-height: calc(100vh - 72px);
 }
 
-.hero-subtitle {
-  font-size: 17px;
-  margin-bottom: 24px;
+.hero-content .container {
+  max-width: 980px;
 }
 
-.hero h1 {
-  font-size: 86px;
-  line-height: 1.05;
+.hero-content h1 {
+  font-size: 62px;
+  line-height: 1.08;
   font-weight: 700;
-  margin-bottom: 28px;
+  color: #ffffff;
+  margin-bottom: 18px;
 }
 
 .hero-text {
-  font-size: 20px;
-  line-height: 1.5;
-  max-width: 930px;
-  margin: 0 auto 40px;
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #ffffff;
 }
 
 .hero-buttons {
+  margin-top: 26px;
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
 .btn {
-  display: inline-block;
-  padding: 18px 38px;
+  min-width: 210px;
+  height: 54px;
+  padding: 0 28px;
   border-radius: 4px;
-  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
   font-weight: 700;
-  transition: 0.3s;
-  border: none;
-  cursor: pointer;
+  transition: 0.2s;
 }
 
 .btn-orange {
-  background: #f89a1c;
-  color: #fff;
+  background: #ff980f;
+  color: #ffffff;
 }
 
 .btn-orange:hover {
-  background: #e48610;
+  background: #ea8600;
 }
 
 .btn-white {
-  background: #fff;
-  color: #111;
+  background: #ffffff;
+  color: #ff980f;
 }
 
+.btn-white:hover {
+  background: #f3f3f3;
+}
+
+.hero-note {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #ffffff;
+}
 .hero-arrow {
   position: absolute;
-  bottom: 20px;
   left: 50%;
+  bottom: 24px;
   transform: translateX(-50%);
-  color: white;
-  font-size: 38px;
-  z-index: 3;
+  z-index: 4;
+  width: 30px;
+  height: 18px;
+}
+
+.hero-arrow span {
+  position: absolute;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.hero-arrow span:first-child {
+  left: 2px;
+  transform: rotate(45deg);
+}
+
+.hero-arrow span:last-child {
+  right: 2px;
+  transform: rotate(-45deg);
 }
 
 
