@@ -481,17 +481,12 @@ a {
 
 .client-card {
   background: #ffffff;
-  border-radius: 6px;
+  border-radius: 4px;
   min-height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px;
-}
-
-.client-card img {
-  max-height: 26px;
-  object-fit: contain;
 }
 .reviews {
   background: #ffffff;
